@@ -1,0 +1,48 @@
+body{
+    background-color: rgb(22, 22, 22);
+}
+
+.box{
+    background-color: chocolate;
+    width: 150px;
+    height: 150px;
+    animation-name: myanimation;
+    position: relative;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    /*animation-delay: 4s;*/
+    /*animation-direction: alternate-reverse;*/
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes myanimation{
+    0%{
+        background-color: chocolate;
+        top: 0px;
+        left: 0px;
+    }
+    25%{
+        background-color: darkorchid;
+        top: 250px;
+        left: 0px;
+        border-radius: 10px;
+    }
+    50%{
+        background-color: darkred;
+        top: 250px;
+        left: 250px;
+        border-radius: 40px;
+    }
+    75%{
+        background-color: dodgerblue;
+        top: 0px;
+        left: 250px;
+        border-radius: 500px;
+    }
+    100%{
+        background-color: gold;
+        top: 0px;
+        left: 0px;
+        border-radius: 10px;
+    }
+}
